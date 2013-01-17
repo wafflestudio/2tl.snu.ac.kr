@@ -6,11 +6,11 @@ class Classroom
   field :location, type: String, :default => ""
 
 # relations
-  #belongs_to :building #FIXME
+  belongs_to :building
   has_many :courses, :dependent => :destroy
   has_many :images, :class_name => "Image", :as => "imageable", :dependent => :destroy
   has_many :videos, :class_name => "Video", :as => "videoable", :dependent => :destroy
 
 # validations
-  #validates :building, :presence => true #FIXME
+  validates :building, :presence => true
 end
