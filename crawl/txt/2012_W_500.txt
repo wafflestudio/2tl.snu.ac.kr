@@ -1,0 +1,4 @@
+2012/W/500;농업생명과학대학;
+2013-01-19 20:56:59
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전필;연합전공 글로벌환경경영학;4학년;538.404;;환경경영 실습(인턴과정);3;;;윤여창;10;6;전필과목으로서 수강정원이 10명임에도 불구하고 개설 요청함;

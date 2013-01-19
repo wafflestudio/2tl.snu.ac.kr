@@ -1,0 +1,4 @@
+2009/S/650;음악대학;
+2013-01-19 20:59:32
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+교양;국악과;1학년;003.060;;한국음악의 이해;3;월(7-3)/수(7-3)/금(7-3);083-404/083-404/083-404;오용록;100;20;국악과 수강불허;normal_art

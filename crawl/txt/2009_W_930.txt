@@ -1,0 +1,4 @@
+2009/W/930;법학전문대학원;
+2013-01-19 20:59:24
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전필;법학전문대학원;석박사;931.654;;민사소송법;3;월(1.5-3)/화(1.5-3)/목(1.5-3);015-201/015-201/015-201;호문혁;60;60;타대생 수강불가;

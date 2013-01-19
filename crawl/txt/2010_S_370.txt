@@ -1,0 +1,4 @@
+2010/S/370;약학대학;
+2013-01-19 20:54:13
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전선;약학과;4학년;370.421;;한약학개론;2;월(1-3)/화(1-3)/수(1-3)/목(1-3)/금(1-3);021-112/021-112/021-112/021-112/021-112;정종한;80;67;6.21-7.2 1-3교시;

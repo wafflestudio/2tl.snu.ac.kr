@@ -1,4 +1,4 @@
-# RailsAdmin config file. Generated on January 17, 2013 22:21
+# RailsAdmin config file. Generated on January 19, 2013 16:48
 # See github.com/sferik/rails_admin for more informations
 
 RailsAdmin.config do |config|
@@ -27,10 +27,10 @@ RailsAdmin.config do |config|
   # config.default_items_per_page = 20
 
   # Exclude specific models (keep the others):
-  # config.excluded_models = ['Admin', 'Classroom', 'College', 'Comment', 'Course', 'Department', 'Doc', 'Grade', 'Group', 'Image', 'Lecture', 'Post', 'Professor', 'Semester', 'Student', 'Timetable', 'User', 'Video']
+  # config.excluded_models = ['Admin', 'Building', 'Classroom', 'College', 'Comment', 'Course', 'Department', 'Doc', 'Evaluation', 'Grade', 'Group', 'Image', 'Instructor', 'Lecture', 'Post', 'Professor', 'Semester', 'Student', 'Timetable', 'User', 'Video']
 
   # Include specific models (exclude the others):
-  # config.included_models = ['Admin', 'Classroom', 'College', 'Comment', 'Course', 'Department', 'Doc', 'Grade', 'Group', 'Image', 'Lecture', 'Post', 'Professor', 'Semester', 'Student', 'Timetable', 'User', 'Video']
+  # config.included_models = ['Admin', 'Building', 'Classroom', 'College', 'Comment', 'Course', 'Department', 'Doc', 'Evaluation', 'Grade', 'Group', 'Image', 'Instructor', 'Lecture', 'Post', 'Professor', 'Semester', 'Student', 'Timetable', 'User', 'Video']
 
   # Label methods for model instances:
   # config.label_methods << :description # Default is [:name, :title]
@@ -106,6 +106,50 @@ RailsAdmin.config do |config|
   # end
 
 
+  ###  Building  ###
+
+  # config.model 'Building' do
+
+  #   # You can copy this to a 'rails_admin do ... end' block inside your building.rb model definition
+
+  #   # Found associations:
+
+  #     configure :classrooms, :has_many_association 
+
+  #   # Found columns:
+
+  #     configure :_type, :text         # Hidden 
+  #     configure :_id, :bson_object_id 
+  #     configure :type, :integer 
+  #     configure :location, :text 
+  #     configure :name, :string 
+
+  #   # Cross-section configuration:
+
+  #     # object_label_method :name     # Name of the method called for pretty printing an *instance* of ModelName
+  #     # label 'My model'              # Name of ModelName (smartly defaults to ActiveRecord's I18n API)
+  #     # label_plural 'My models'      # Same, plural
+  #     # weight 0                      # Navigation priority. Bigger is higher.
+  #     # parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
+  #     # navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
+
+  #   # Section specific configuration:
+
+  #     list do
+  #       # filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
+  #       # items_per_page 100    # Override default_items_per_page
+  #       # sort_by :id           # Sort column (default is primary key)
+  #       # sort_reverse true     # Sort direction (default is true for primary key, last created first)
+  #     end
+  #     show do; end
+  #     edit do; end
+  #     export do; end
+  #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
+  #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
+  #     # using `field` instead of `configure` will exclude all other fields and force the ordering
+  # end
+
+
   ###  Classroom  ###
 
   # config.model 'Classroom' do
@@ -114,7 +158,8 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :courses, :has_many_association 
+  #     configure :building, :belongs_to_association 
+  #     configure :lectures, :has_and_belongs_to_many_association 
   #     configure :images, :has_many_association 
   #     configure :videos, :has_many_association 
 
@@ -123,6 +168,8 @@ RailsAdmin.config do |config|
   #     configure :_type, :text         # Hidden 
   #     configure :_id, :bson_object_id 
   #     configure :location, :text 
+  #     configure :building_id, :bson_object_id         # Hidden 
+  #     configure :lecture_ids, :serialized         # Hidden 
 
   #   # Cross-section configuration:
 
@@ -166,7 +213,7 @@ RailsAdmin.config do |config|
 
   #     configure :_type, :text         # Hidden 
   #     configure :_id, :bson_object_id 
-  #     configure :code, :text 
+  #     configure :number, :text 
   #     configure :name, :string 
   #     configure :address, :text 
   #     configure :homepage, :text 
@@ -256,22 +303,24 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :semester, :belongs_to_association 
-  #     configure :lecture, :belongs_to_association 
-  #     configure :professor, :belongs_to_association 
-  #     configure :students, :has_and_belongs_to_many_association 
-  #     configure :grades, :has_many_association 
-  #     configure :groups, :has_many_association 
-  #     configure :posts, :has_many_association 
+  #     configure :instructors, :has_and_belongs_to_many_association 
+  #     configure :lectures, :has_many_association 
 
   #   # Found columns:
 
   #     configure :_type, :text         # Hidden 
   #     configure :_id, :bson_object_id 
-  #     configure :semester_id, :bson_object_id         # Hidden 
-  #     configure :lecture_id, :bson_object_id         # Hidden 
-  #     configure :professor_id, :bson_object_id         # Hidden 
-  #     configure :student_ids, :serialized         # Hidden 
+  #     configure :classfication, :integer 
+  #     configure :academic_year, :integer 
+  #     configure :title, :string 
+  #     configure :number, :text 
+  #     configure :credit, :integer 
+  #     configure :general_category, :integer 
+  #     configure :general_subcategory, :integer 
+  #     configure :english, :boolean 
+  #     configure :grading_type, :boolean 
+  #     configure :constituent, :integer 
+  #     configure :instructor_ids, :serialized         # Hidden 
 
   #   # Cross-section configuration:
 
@@ -307,8 +356,8 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :lectures, :has_many_association 
-  #     configure :professors, :has_many_association 
+  #     configure :courses, :has_many_association 
+  #     configure :instructors, :has_many_association 
   #     configure :images, :has_many_association 
   #     configure :videos, :has_many_association 
 
@@ -316,7 +365,7 @@ RailsAdmin.config do |config|
 
   #     configure :_type, :text         # Hidden 
   #     configure :_id, :bson_object_id 
-  #     configure :code, :text 
+  #     configure :number, :text 
   #     configure :name, :string 
   #     configure :address, :text 
   #     configure :homepage, :text 
@@ -401,6 +450,54 @@ RailsAdmin.config do |config|
   # end
 
 
+  ###  Evaluation  ###
+
+  # config.model 'Evaluation' do
+
+  #   # You can copy this to a 'rails_admin do ... end' block inside your evaluation.rb model definition
+
+  #   # Found associations:
+
+  #     configure :user, :belongs_to_association 
+  #     configure :evaluatable, :polymorphic_association         # Hidden 
+
+  #   # Found columns:
+
+  #     configure :_type, :text         # Hidden 
+  #     configure :_id, :bson_object_id 
+  #     configure :content, :text 
+  #     configure :grade, :float 
+  #     configure :user_id, :bson_object_id         # Hidden 
+  #     configure :evaluatable_type, :text         # Hidden 
+  #     configure :evaluatable_field, :string         # Hidden 
+  #     configure :evaluatable_id, :bson_object_id         # Hidden 
+
+  #   # Cross-section configuration:
+
+  #     # object_label_method :name     # Name of the method called for pretty printing an *instance* of ModelName
+  #     # label 'My model'              # Name of ModelName (smartly defaults to ActiveRecord's I18n API)
+  #     # label_plural 'My models'      # Same, plural
+  #     # weight 0                      # Navigation priority. Bigger is higher.
+  #     # parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
+  #     # navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
+
+  #   # Section specific configuration:
+
+  #     list do
+  #       # filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
+  #       # items_per_page 100    # Override default_items_per_page
+  #       # sort_by :id           # Sort column (default is primary key)
+  #       # sort_reverse true     # Sort direction (default is true for primary key, last created first)
+  #     end
+  #     show do; end
+  #     edit do; end
+  #     export do; end
+  #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
+  #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
+  #     # using `field` instead of `configure` will exclude all other fields and force the ordering
+  # end
+
+
   ###  Grade  ###
 
   # config.model 'Grade' do
@@ -409,7 +506,7 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :course, :belongs_to_association 
+  #     configure :lecture, :belongs_to_association 
   #     configure :student, :belongs_to_association 
 
   #   # Found columns:
@@ -418,7 +515,7 @@ RailsAdmin.config do |config|
   #     configure :_id, :bson_object_id 
   #     configure :grade, :float 
   #     configure :description, :text 
-  #     configure :course_id, :bson_object_id         # Hidden 
+  #     configure :lecture_id, :bson_object_id         # Hidden 
   #     configure :student_id, :bson_object_id         # Hidden 
 
   #   # Cross-section configuration:
@@ -455,7 +552,7 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :course, :belongs_to_association 
+  #     configure :lecture, :belongs_to_association 
   #     configure :leader, :belongs_to_association 
   #     configure :students, :has_and_belongs_to_many_association 
 
@@ -464,7 +561,7 @@ RailsAdmin.config do |config|
   #     configure :_type, :text         # Hidden 
   #     configure :_id, :bson_object_id 
   #     configure :name, :string 
-  #     configure :course_id, :bson_object_id         # Hidden 
+  #     configure :lecture_id, :bson_object_id         # Hidden 
   #     configure :leader_id, :bson_object_id         # Hidden 
   #     configure :student_ids, :serialized         # Hidden 
 
@@ -546,6 +643,54 @@ RailsAdmin.config do |config|
   # end
 
 
+  ###  Instructor  ###
+
+  # config.model 'Instructor' do
+
+  #   # You can copy this to a 'rails_admin do ... end' block inside your instructor.rb model definition
+
+  #   # Found associations:
+
+  #     configure :professor, :belongs_to_association 
+  #     configure :department, :belongs_to_association 
+  #     configure :courses, :has_and_belongs_to_many_association 
+  #     configure :lectures, :has_many_association 
+
+  #   # Found columns:
+
+  #     configure :_type, :text         # Hidden 
+  #     configure :_id, :bson_object_id 
+  #     configure :name, :string 
+  #     configure :professor_id, :bson_object_id         # Hidden 
+  #     configure :department_id, :bson_object_id         # Hidden 
+  #     configure :course_ids, :serialized         # Hidden 
+
+  #   # Cross-section configuration:
+
+  #     # object_label_method :name     # Name of the method called for pretty printing an *instance* of ModelName
+  #     # label 'My model'              # Name of ModelName (smartly defaults to ActiveRecord's I18n API)
+  #     # label_plural 'My models'      # Same, plural
+  #     # weight 0                      # Navigation priority. Bigger is higher.
+  #     # parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
+  #     # navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
+
+  #   # Section specific configuration:
+
+  #     list do
+  #       # filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
+  #       # items_per_page 100    # Override default_items_per_page
+  #       # sort_by :id           # Sort column (default is primary key)
+  #       # sort_reverse true     # Sort direction (default is true for primary key, last created first)
+  #     end
+  #     show do; end
+  #     edit do; end
+  #     export do; end
+  #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
+  #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
+  #     # using `field` instead of `configure` will exclude all other fields and force the ordering
+  # end
+
+
   ###  Lecture  ###
 
   # config.model 'Lecture' do
@@ -556,15 +701,30 @@ RailsAdmin.config do |config|
 
   #     configure :semester, :belongs_to_association 
   #     configure :department, :belongs_to_association 
-  #     configure :courses, :has_many_association 
+  #     configure :course, :belongs_to_association 
+  #     configure :instructor, :belongs_to_association 
+  #     configure :classrooms, :has_and_belongs_to_many_association 
+  #     configure :students, :has_and_belongs_to_many_association 
+  #     configure :grades, :has_many_association 
+  #     configure :groups, :has_many_association 
+  #     configure :posts, :has_many_association 
 
   #   # Found columns:
 
   #     configure :_type, :text         # Hidden 
   #     configure :_id, :bson_object_id 
-  #     configure :name, :string 
+  #     configure :number, :text 
+  #     configure :time, :text 
+  #     configure :location, :text 
+  #     configure :quota, :integer 
+  #     configure :enrollment, :integer 
+  #     configure :remark, :text 
   #     configure :semester_id, :bson_object_id         # Hidden 
   #     configure :department_id, :bson_object_id         # Hidden 
+  #     configure :course_id, :bson_object_id         # Hidden 
+  #     configure :instructor_id, :bson_object_id         # Hidden 
+  #     configure :classroom_ids, :serialized         # Hidden 
+  #     configure :student_ids, :serialized         # Hidden 
 
   #   # Cross-section configuration:
 
@@ -648,11 +808,10 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :department, :belongs_to_association 
   #     configure :comments, :has_many_association 
   #     configure :posts, :has_many_association 
   #     configure :profile_image, :has_one_association 
-  #     configure :courses, :has_many_association 
+  #     configure :instructors, :has_many_association 
 
   #   # Found columns:
 
@@ -669,14 +828,6 @@ RailsAdmin.config do |config|
   #     configure :last_sign_in_at, :datetime 
   #     configure :current_sign_in_ip, :text 
   #     configure :last_sign_in_ip, :text 
-  #     configure :code, :text 
-  #     configure :name, :string 
-  #     configure :address, :text 
-  #     configure :homepage, :text 
-  #     configure :phone, :text 
-  #     configure :fax, :text 
-  #     configure :work_hours, :text 
-  #     configure :department_id, :bson_object_id         # Hidden 
 
   #   # Cross-section configuration:
 
@@ -712,7 +863,7 @@ RailsAdmin.config do |config|
 
   #   # Found associations:
 
-  #     configure :courses, :has_many_association 
+  #     configure :lectures, :has_many_association 
 
   #   # Found columns:
 
@@ -756,7 +907,7 @@ RailsAdmin.config do |config|
   #   # Found associations:
 
   #     configure :department, :belongs_to_association 
-  #     configure :courses, :has_and_belongs_to_many_association 
+  #     configure :lectures, :has_and_belongs_to_many_association 
   #     configure :groups, :has_and_belongs_to_many_association 
   #     configure :comments, :has_many_association 
   #     configure :posts, :has_many_association 
@@ -780,7 +931,7 @@ RailsAdmin.config do |config|
   #     configure :current_sign_in_ip, :text 
   #     configure :last_sign_in_ip, :text 
   #     configure :department_id, :bson_object_id         # Hidden 
-  #     configure :course_ids, :serialized         # Hidden 
+  #     configure :lecture_ids, :serialized         # Hidden 
   #     configure :group_ids, :serialized         # Hidden 
 
   #   # Cross-section configuration:

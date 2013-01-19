@@ -1,0 +1,6 @@
+2008/W/300;자연과학대학;
+2013-01-19 21:01:19
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+교양;통계학과;1학년;010.139;;통계학;3;월(1-3)/수(1-3)/금(1-3);028-302/028-302/028-302;오진호;60;54;;basic_science
+교양;통계학과;1학년;010.139;001;통계학;3;월(1-3)/수(1-3)/금(1-3);028-303/028-303/028-303;노중식;60;52;;basic_science
+교양;통계학과;1학년;010.339;;통계학실험;1;월(5-2)/수(5-2)/금(5-2);025-210/025-210/025-210;오진호;40;24;;basic_science

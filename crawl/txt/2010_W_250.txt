@@ -1,0 +1,5 @@
+2010/W/250;경영대학;
+2013-01-19 20:53:34
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전필;경영대학;3학년;251.322;;국제경영;3;화(2-3)/수(2-3)/목(2-3);058-323/058-323/058-323;이강문;90;79;;
+전필;경영대학;2학년;251.326;;경영정보론;3;화(6-3)/수(6-3)/목(6-3);058-119/058-119/058-119;조헌진;85;58;;

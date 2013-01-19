@@ -7,7 +7,7 @@ class Classroom
 
 # relations
   belongs_to :building
-  has_many :courses, :dependent => :destroy
+  has_and_belongs_to_many :lectures, :dependent => :destroy
   has_many :images, :class_name => "Image", :as => "imageable", :dependent => :destroy
   has_many :videos, :class_name => "Video", :as => "videoable", :dependent => :destroy
 

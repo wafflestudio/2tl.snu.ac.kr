@@ -1,0 +1,4 @@
+2012/W/810;간호대학;
+2013-01-19 20:57:00
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전선;간호학과;석박사;811.720;;국제보건의료와 간호;3;;;이인숙;12;12;;

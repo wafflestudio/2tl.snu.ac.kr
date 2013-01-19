@@ -1,0 +1,5 @@
+2011/S/930;법학전문대학원;
+2013-01-19 20:55:47
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전선;법학전문대학원;석박사;931.905;;비교헌법론;2;월(6-3)/화(6-3)/수(6-3)/목(6-3)/금(6-3);015-201/015-201/015-201/015-201/015-201;David Stephen Law;100;47;(영어강의)타대생수강불허(수업기간6.27~7.8);
+전선;법학전문대학원;석박사;931.907;;인터넷 법 정책;2;월(1.5-3)/화(1.5-3)/수(1.5-3)/목(1.5-3)/금(1.5-3);015-201/015-201/015-201/015-201/015-201;Christopher S. Yoo;100;59;(영어강의)타대생수강불허(수업기간7.21-8.3);

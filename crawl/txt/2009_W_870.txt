@@ -1,0 +1,4 @@
+2009/W/870;국제대학원;
+2013-01-19 20:59:23
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전선;국제개발정책학과;석사;876.502;;경제발전전략;3;월(5-3)/화(5-3)/목(5-3);140-201/140-201/140-201;안덕근;50;41;;

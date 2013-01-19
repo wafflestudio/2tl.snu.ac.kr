@@ -1,0 +1,5 @@
+2009/W/250;경영대학;
+2013-01-19 20:59:21
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전필;경영대학;3학년;251.322;001;국제경영;3;월(3-2)/화(3-2)/수(3-2)/목(3-2)/금(3-2);058-332/058-332/058-332/058-332/058-332;윤채린;70;45;;
+전필;경영대학;3학년;251.322;002;국제경영;3;월(1-2)/화(1-2)/수(1-2)/목(1-2)/금(1-2);058-327/058-327/058-327/058-327/058-327;김아리;70;44;;

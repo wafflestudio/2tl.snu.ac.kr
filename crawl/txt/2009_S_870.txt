@@ -1,0 +1,5 @@
+2009/S/870;국제대학원;
+2013-01-19 20:59:33
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전선;국제개발정책학과;석사;8752.613;;국제정치경제의이해;3;화(6-4)/목(6-4);140-201/140-201;정영록;32;20;;
+전선;국제학과;석박사;8753.594;;지역연구연습;3;;;문우식;50;28;수업기간:8.3- 14,선발된 경우에 한하여 수강 가능,홈페이지 (gsis.snu.ac.kr) 참고;

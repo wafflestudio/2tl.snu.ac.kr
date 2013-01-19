@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.jqplot
+//= require jqplot.categoryAxisRenderer
+//= require jqplot.highlighter

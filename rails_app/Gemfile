@@ -13,6 +13,8 @@ gem 'mongoid'
 gem 'bson_ext'
 gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 
+gem 'seedbank'
+
 # AUTHORIZATION
 gem 'devise'
 

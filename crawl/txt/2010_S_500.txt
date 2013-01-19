@@ -1,0 +1,5 @@
+2010/S/500;농업생명과학대학;
+2013-01-19 20:54:14
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전선;응용생물화학부;2학년;519.002;;유기화학;3;월(4-3)/수(4-3)/금(4-3);200-1039/200-1039/200-1039;김수언;30;28;월.수.금 4-6교시, 200-1023호;
+전필;바이오시스템·소재학부;3학년;5261.322;;전기전자응용 및 실험;3;화(1-4)/목(1-4);200-2213/200-2213;조성인;30;14;;

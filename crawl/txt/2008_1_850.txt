@@ -1,0 +1,4 @@
+2008/1/850;치과대학;
+2013-01-19 21:00:45
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전선;치의학과;석박사;851.906;;치의학 연구윤리;3;;;진보형;50;18;;

@@ -1,0 +1,4 @@
+2011/W/870;국제대학원;
+2013-01-19 20:55:24
+classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
+전선;국제개발정책학과;석사;876.502;;경제발전전략;3;월(6-3)/수(6-3)/금(6-3);140-201/140-201/140-201;김종섭;20;38;월수금 14:00-17:00/140동 201호(타과생수강불허);

@@ -2,9 +2,10 @@ class Department
   include Mongoid::Document
 
 # fields
-  field :code, type: String, :default => ""
+  field :number, type: String, :default => ""
 
-  field :name, type: String, :default => ""
+  field :name, type: String, :default => "", localize: true
+  field :update_date, type: Integer, :default => 0
 
   field :address, type: String, :default => ""
   field :homepage, type: String, :default => ""
@@ -12,9 +13,10 @@ class Department
   field :fax, type: String, :default => ""
   field :work_hours, type: String, :default => ""
 
+
 # relations
-  has_many :lectures, :dependent => :destroy
-  has_many :professors, :dependent => :destroy
+  has_many :courses, :dependent => :destroy
+  has_many :instructors, :dependent => :destroy
   has_many :images, :class_name => "Image", :as => "imageable", :dependent => :destroy
   has_many :videos, :class_name => "Video", :as => "videoable", :dependent => :destroy
 end

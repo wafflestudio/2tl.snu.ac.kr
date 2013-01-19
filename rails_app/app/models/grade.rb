@@ -21,10 +21,10 @@ class Grade
   field :description, type: String, :default => ""
 
 # relations
-  belongs_to :course
-  belongs_to :student
+  belongs_to :lecture
+  belongs_to :report
 
 # validations
-  validates :course, :presence => true
-  validates :student, :presence => true
+  validates :lecture, :presence => true
+  validates :report, :presence => true
 end

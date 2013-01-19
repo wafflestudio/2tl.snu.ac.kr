@@ -2,9 +2,9 @@ class College
   include Mongoid::Document
 
 # fields
-  field :code, type: String, :default => ""
+  field :number, type: String, :default => ""
 
-  field :name, type: String, :default => ""
+  field :name, type: String, :default => "", localize: true
 
   field :address, type: String, :default => ""
   field :homepage, type: String, :default => ""
