@@ -44,4 +44,16 @@ class User
   has_many :comments, :dependent => :destroy
   has_many :posts, :dependent => :destroy
   has_one :profile_image, :class_name => "Image", :as => "imageable", :dependent => :destroy
+
+# methods
+  def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
+    user = User.where(:email => auth.info.email).first
+    unless user
+      user = User.create(
+                         email: auth.info.email,
+                         password:Devise.friendly_token[0,20]
+      )
+    end
+    user
+  end
 end

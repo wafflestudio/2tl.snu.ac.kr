@@ -1,0 +1,7 @@
+<% if signed_in? %>
+  Email: <%= current_user.email %>
+  <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+<% else %>
+  <%= link_to "Login", "http://sso.snu.ac.kr/snu/ssologin.jsp?si_redirect_address=http://auth.snu.ac.kr:4321/callback?callback=http://211.43.193.113:4000/graph/snu/user" %>
+  <%= link_to "Get Grades", "sso.snu.ac.kr/snu/ssologin.jsp?si_redirect_address=http://auth.snu.ac.kr:4321/callback?callback=http://211.43.193.113:4000/graph/snu/grades/avg" %>
+<% end %>

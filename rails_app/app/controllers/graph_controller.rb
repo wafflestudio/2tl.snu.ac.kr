@@ -11,13 +11,17 @@ class GraphController < ApplicationController
     resp, body = @http.get(path, @cookie)
     doc = Nokogiri::XML(resp.body)
 
-    render :xml => resp.body
-=begin
-    memberkey = doc.xpath("//memberkey").text
     email = doc.xpath("//email").text
+=begin
+    render :xml => resp.body
+    memberkey = doc.xpath("//memberkey").text
     name = doc.xpath("//name").text
     groupcd = doc.xpath("//groupcd").text
 =end
+
+    user = User.find_or_create_by(:email => email)
+    sign_in(user.class, user)
+    redirect_to after_sign_in_path_for(user)
   end
 
   def grade_avg #직전 학기 평점
@@ -85,8 +89,8 @@ class GraphController < ApplicationController
     @http = Net::HTTP.new(server[:host], server[:port])
   end
   def set_cookie_siticket
-    siticket = params[:siticket].to_s.gsub(" ", "+")
-    redirect_to root_path if siticket.nil? || siticket.empty?
-    @cookie = {"Cookie" => "SITicket=#{siticket}"}
+    @siticket = params[:siticket].to_s.gsub(" ", "+")
+    redirect_to root_path if @siticket.nil? || @siticket.empty?
+    @cookie = {"Cookie" => "SITicket=#{@siticket}"}
   end
 end

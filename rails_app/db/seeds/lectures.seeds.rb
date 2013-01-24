@@ -1,11 +1,11 @@
 year_codes = [
-  #2008, 2009, 2010, 2011, 2012
-  2010
-  #2013
+  #2006, 2007, 2008, 2009, 2010, 2011, 2012
+  #2010
+  2013
 ]
 semester_codes = [
-  "1", "S", "2", "W"
-  #"1"
+  #"1", "S", "2", "W"
+  "1"
 ]
 
 year_codes.each do |year_code|
@@ -39,8 +39,7 @@ year_codes.each do |year_code|
             category = meta_lecture[13].split("_").first
             sub_category = meta_lecture[13].split("_").last
 
-            course = Course.find_or_create_by(:number => course_number, :title => course_title)
-            course
+            course = Course.find_or_create_by(:number => course_number, :title => course_title, :credit => credit)
 
             department = Department.find_or_create_by(:name => department_name, :college_id => college._id)
             instructor = Instructor.find_or_create_by(:name => instructor_name, :department_id => department._id)

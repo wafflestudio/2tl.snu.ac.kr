@@ -13,10 +13,13 @@ class Department
   field :fax, type: String, :default => ""
   field :work_hours, type: String, :default => ""
 
-
 # relations
+  belongs_to :college
   has_many :courses, :dependent => :destroy
   has_many :instructors, :dependent => :destroy
   has_many :images, :class_name => "Image", :as => "imageable", :dependent => :destroy
   has_many :videos, :class_name => "Video", :as => "videoable", :dependent => :destroy
+
+# validations
+  validates :college, :presence => true
 end

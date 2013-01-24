@@ -8,9 +8,9 @@ class Report #성적표
 # relations
   belongs_to :semester
   belongs_to :student
-  had_many :grades, :dependent => :destroy
+  has_many :grades, :dependent => :destroy
 
 # validations
-  validates :semester
-  validates :student
+  validates :semester, :presence => true
+  validates :student, :presence => true
 end
