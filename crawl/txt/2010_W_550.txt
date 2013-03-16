@@ -1,4 +1,0 @@
-2010/W/550;수의과대학;
-2013-01-19 20:53:35
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;수의과대학;3학년;552.344;;애완 및 야생조류의학;1;;;김재홍;5;1;수업시간 별도 공지;

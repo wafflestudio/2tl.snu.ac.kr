@@ -49,4 +49,7 @@ class Course
 # relations
   has_many :lectures, :dependent => :destroy
   has_and_belongs_to_many :instructors, :dependent => :destroy
+
+# processing
+  index({ number: 1, title: 1 }, { background: true, sparse: true })
 end

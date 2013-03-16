@@ -1,4 +1,0 @@
-2012/S/500;농업생명과학대학;
-2013-01-19 20:57:12
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;응용생물화학부;2학년;519.002;;유기화학;3;월(8-3)/수(8-3)/금(8-3);200-1043/200-1043/200-1043;김수언;40;27;;

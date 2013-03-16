@@ -1,1 +1,1 @@
-{ "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "snu2_tl_development.courses", "name" : "_id_" } ] }
+{ "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "snu2_tl_development.courses", "name" : "_id_" }, { "v" : 1, "key" : { "number" : 1, "title" : 1 }, "ns" : "snu2_tl_development.courses", "background" : true, "sparse" : true, "name" : "number_1_title_1" } ] }

@@ -4,8 +4,9 @@ class Image
   include Mongoid::Paperclip
 
 # fields
-  has_mongoid_attached_file :attachment
-  # :default        => ':rails_root/public/system/:class/:attachment/:style/default.jpg',
+  has_mongoid_attached_file :attachment,
+    :default        => ':rails_root/public/system/:class/default_:style.:extension',
+    :path           => ':rails_root/public/system/:class/:attachment/:id_:style.:extension'
   # :styles => {
   # :original => ['1920x1680>', :jpg],
   # :large    => ['500x500>',   :jpg], #TODO

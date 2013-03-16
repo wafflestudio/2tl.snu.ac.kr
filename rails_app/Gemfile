@@ -16,8 +16,6 @@ gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 gem 'seedbank'
 
 # AUTHORIZATION
-gem 'omniauth'
-gem 'omniauth-oauth2'
 gem 'devise'
 
 # MANAGEMENT

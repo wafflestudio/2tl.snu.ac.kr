@@ -1,5 +1,0 @@
-2011/2/9XX;무소속대학;
-2013-01-19 20:55:16
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-일선;무소속학과;3학년;990.301A;;군사학 1;3;월(0-2)/수(0-2);066-101/066-101;남선우;80;16;;
-일선;무소속학과;4학년;990.401A;;군사학 2;3;월(0-2)/수(0-2);066-102/066-102;윤성운;80;23;;

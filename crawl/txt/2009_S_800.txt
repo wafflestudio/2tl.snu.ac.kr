@@ -1,4 +1,0 @@
-2009/S/800;의과대학;
-2013-01-19 20:59:32
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-교양;의학과;1학년;006.032;;인간생명과학개론;3;월(9-2)/화(9-2)/수(9-2)/목(9-2)/금(9-2);-    /   -    /   -    /   -    /   -;박재갑;70;20;종강: 7.22 강의장소: 연건캠퍼스 함춘강의실;normal_nature

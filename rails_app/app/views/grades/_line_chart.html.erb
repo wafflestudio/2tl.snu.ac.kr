@@ -1,0 +1,38 @@
+<% type = ["", "학부", "석사", "박사"] %>
+<% grades['seongjeok_info']['course'].each_with_index do |course, i| %>
+  <% pyungjeom = course['pyungjeom'] %>
+  <% data_set = pyungjeom.map {|p| [p['id'], p['pyeonggyun'].to_f]} %>
+  <div id="chart<%= i %>"></div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        var line = <%= data_set.to_s.html_safe %>;
+
+        var plot = $.jqplot('chart<%= i %>', [line], {
+              title: '전체 학기 평점(<%= type[course['cd'].to_i] %>)',
+              axes: {
+              xaxis: {
+              label: "학기",
+              renderer: $.jqplot.CategoryAxisRenderer,
+              tickOptions: {
+              formatString: 'Date: %s'
+              }
+              },
+              yaxis: {
+              label: "평점",
+              tickOptions: {
+              formatString: '%.2f'
+              }
+              }
+              },
+              highlighter: {
+              show: true,
+              tooltipAxes: 'y',
+              sizeAdjust: 7.5
+                           },
+              cursor: {
+              show: true
+            }
+      });
+    });
+  </script>
+<% end %>

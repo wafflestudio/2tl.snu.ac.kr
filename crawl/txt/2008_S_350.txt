@@ -1,5 +1,0 @@
-2008/S/350;생활과학대학;
-2013-01-19 21:01:29
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;의류학과;3학년;353.318;;직물디자인 및 실습;2;화(6-5)/목(6-5);013-215/013-215;김유라;30;28;;
-전선;의류학과;1학년;353.420;;CAD실습;2;월(5-5)/수(5-5);013-330/013-330;이진민;30;22;;

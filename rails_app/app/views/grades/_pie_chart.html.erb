@@ -1,0 +1,28 @@
+<% type = ["", "학부", "석사", "박사"] %>
+<% grades['seongjeok_info']['course'].each_with_index do |course, i| %>
+  <% data_set = {}#{'A' => 0, 'B' => 0, 'C' => 0, 'D' => 0, 'F' => 0} %>
+  <% seongjeok = course['seongjeok'] %>
+  <% seongjeok.each do |s| %>
+    <% p = data_set[s['sungjuk'].to_s[0]].to_i + 1 %>
+    <% data_set[s['sungjuk'].to_s[0]] = p %>
+  <% end %>
+  <div id="chart<%= i %>"></div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var data = <%= data_set.to_a.to_s.html_safe %>;
+
+      var plot = jQuery.jqplot ('chart<%= i %>', [data], 
+        { 
+          title: '전체 학기 성적 분포(<%= type[course['cd'].to_i] %>)',
+          seriesDefaults: {
+            renderer: jQuery.jqplot.PieRenderer, 
+            rendererOptions: {
+              showDataLabels: true
+            }
+          }, 
+          legend: { show:true, location: 'e' }
+        }
+      );
+    });
+  </script>
+<% end %>

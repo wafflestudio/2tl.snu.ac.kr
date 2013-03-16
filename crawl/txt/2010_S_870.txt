@@ -1,5 +1,0 @@
-2010/S/870;국제대학원;
-2013-01-19 20:54:15
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;국제개발정책학과;석사;8752.613;;국제정치경제의이해;3;화(6-4)/목(6-4);140-201/140-201;정영록;30;19;타학과수강불허;
-전선;국제학과;석사;8753.594;005;지역연구연습;3;;;정영록;30;20;;

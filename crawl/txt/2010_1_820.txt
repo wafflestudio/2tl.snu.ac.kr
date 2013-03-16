@@ -1,4 +1,0 @@
-2010/1/820;대학원;
-2013-01-19 20:52:59
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-일선;대학원;석박사;990.501;;연구윤리;2;목(8-2);43-1-401;서이종;100;73;;

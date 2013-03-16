@@ -28,4 +28,7 @@ class Lecture
   validates :department, :presence => true
   validates :course, :presence => true
   validates :instructor, :presence => true
+
+# processing
+  index({ number: 1 }, { background: true, sparse: true })
 end

@@ -1,4 +1,0 @@
-2011/S/810;간호대학;
-2013-01-19 20:55:46
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;간호대학;석박사;811.661A;;종양간호세미나;2;금(1-8)/토(1-7);#   -    /#   -    ,502-    ,502-;이명선;20;15;;

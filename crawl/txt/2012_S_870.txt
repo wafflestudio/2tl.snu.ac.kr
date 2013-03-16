@@ -1,6 +1,0 @@
-2012/S/870;국제대학원;
-2013-01-19 20:57:13
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;국제학과;석박사;8751.518A;;국제통상특강;3;월(5-3)/수(5-3)/금(5-3);140-1-102/140-1-102/140-1-102;Ya Qin;30;18;;
-전선;국제개발정책학과;석박사;8751.612;001;통상정책의 정치경제학;3;월(4-3)/수(4-3)/금(4-3);140-1-202/140-1-202/140-1-202;김종섭;20;20;타과생수강불허(Only MIDP Students can take this course.);
-전선;국제학과;석박사;8753.594;;지역연구연습;3;;;안덕근;20;65;Intensive Course(8/1-8/11 09:00~18:00),140동 201호,대학원생만 가능,;

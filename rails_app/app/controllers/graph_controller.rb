@@ -2,8 +2,8 @@
 require 'net/http'
 require 'nokogiri'
 class GraphController < ApplicationController
-  before_filter :configure_http
-  before_filter :set_cookie_siticket
+  before_filter :configure_http, :except => [:timetable_test]
+  before_filter :set_cookie_siticket, :except => [:timetable_test]
 
   def user #개인정보
     path = "/app/acct_info.do"
@@ -36,53 +36,86 @@ class GraphController < ApplicationController
     path = "/app/view_sj_list_pyungjeom_all.do"
 
     resp, body = @http.get(path, @cookie)
-    doc = Nokogiri::XML(resp.body)
+
+    grades = Hash.from_xml(resp.body)
+    grades['seongjeok_info']['course'] = [grades['seongjeok_info']['course']] if grades['seongjeok_info']['course'].count == 5
 
     respond_to do |format|
-      format.html {render "grades/_graph", :locals => {:grades => Hash.from_xml(resp.body)}}
+      format.html {render "grades/_line_chart", :locals => {:grades => grades}}
       format.xml  {render :xml => resp.body}
     end
   end
-  def grade #직전 학기 성적
+  def grade #직전 학기 성적 TODO
     path = "/app/view_sj_list_seongjeok.do"
 
     resp, body = @http.get(path, @cookie)
-    doc = Nokogiri::XML(resp.body)
 
-    render :xml => resp.body
+    grades = Hash.from_xml(resp.body)
+    grades['seongjeok_info']['course'] = [grades['seongjeok_info']['course']] if grades['seongjeok_info']['course'].count == 5
+
+    respond_to do |format|
+      format.html {render "grades/_bar_chart", :locals => {:grades => grades}}
+      format.xml  {render :xml => resp.body}
+    end
   end
   def grades #전체 학기 성적
     path = "/app/view_sj_list_seongjeok_all.do"
 
     resp, body = @http.get(path, @cookie)
-    doc = Nokogiri::XML(resp.body)
 
-    render :xml => resp.body
+    grades = Hash.from_xml(resp.body)
+    grades['seongjeok_info']['course'] = [grades['seongjeok_info']['course']] if grades['seongjeok_info']['course'].count == 5
+
+    respond_to do |format|
+      format.html {render "grades/_pie_chart", :locals => {:grades => grades}}
+      format.xml  {render :xml => resp.body}
+    end
   end
 
+  def timetable_test #직전 학기 시간표 테스트
+    xml = File.open(Rails.root+"public/timetable_2013_1_jeonjaeho.xml")
+
+    courses = Hash.from_xml(xml.read)
+    courses = courses['timetable_info']
+
+    respond_to do |format|
+      format.html {render "timetables/_elem", :locals => {:data_set => ActiveSupport::JSON.encode(Timetable.parse_timetable(courses).map {|j| JSON.parse(j.to_json)})}}
+      format.xml  {render :xml => resp.body}
+    end
+  end
   def timetable #직전 학기 시간표
     path = "/app/timetable_list.do"
 
     resp, body = @http.get(path, @cookie)
-    doc = Nokogiri::XML(resp.body)
 
-    render :xml => resp.body
+    courses = Hash.from_xml(resp.body)
+    courses = courses['timetable_info']
+
+    respond_to do |format|
+      format.html {render "timetables/_elem", :locals => {:data_set => ActiveSupport::JSON.encode(Timetable.parse_timetable(courses).map {|j| JSON.parse(j.to_json)})}}
+      format.xml  {render :xml => resp.body}
+    end
   end
   def timetables #전체 학기 시간표
-    path = "/app/timetable_list_portal.do"
+    path = "/app/view_sj_list_seongjeok_all.do"
 
     resp, body = @http.get(path, @cookie)
-    doc = Nokogiri::XML(resp.body)
 
-    render :xml => resp.body
+    grades = Hash.from_xml(resp.body)
+    grades['seongjeok_info']['course'] = [grades['seongjeok_info']['course']] if grades['seongjeok_info']['course'].count == 5
+
+    respond_to do |format|
+      format.html {render "timetables/_elem", :locals => {:data_set => ActiveSupport::JSON.encode(Timetable.parse_grades(grades).map {|j| JSON.parse(j.to_json)})}}
+      format.xml  {render :xml => resp.body}
+    end
   end
 
   private
   def configure_http
     servers = [
-      {:host => "app.snu.ac.kr", :port => 80}
-#      {:host => "diana.snu.ac.kr", :port => 38080},
-#      {:host => "noel.snu.ac.kr", :port => 38080}
+      {:host => "app.snu.ac.kr", :port => 80}#,
+      #{:host => "diana.snu.ac.kr", :port => 38080},
+      #{:host => "noel.snu.ac.kr", :port => 38080}
     ]
 
     server = servers[rand(servers.length)]

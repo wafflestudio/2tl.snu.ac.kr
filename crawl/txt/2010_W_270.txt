@@ -1,5 +1,0 @@
-2010/W/270;법과대학;
-2013-01-19 20:53:35
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-교양;법과대학;1학년;025.022;;시장경제와 법;3;월(1.5-3)/수(1.5-3)/금(1.5-3);015-301/015-301/015-301;이봉의;60;93;수업기간:12/20 ~ 1/21;core_society
-전선;법과대학;3학년;273.311;001;법철학;3;월(6-3)/화(6-3)/수(6-3)/목(6-3)/금(6-3);015-201/015-201/015-201/015-201/015-201;김도균;120;38;수업기간:12/20~1/7;

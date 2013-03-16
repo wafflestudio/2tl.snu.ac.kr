@@ -96,6 +96,8 @@ puts "category mapping complete"
 
 colleges = [
   #[code, korean_title, english_title]
+  ["", "전체", "All"]
+=begin
   ["100", "인문대학", ""],
   ["200", "사회과학대학", ""],
   ["250", "경영대학", ""],
@@ -127,6 +129,7 @@ colleges = [
   ["9XX", "무소속대학", ""],
   ["A250", "경영대학원", ""],
   ["A351", "가정대학", ""],
+=end
 ]
 
 colleges.each do |elem|
@@ -135,10 +138,10 @@ colleges.each do |elem|
   college_title_en = elem[2]
 
   #download 
-  puts "Start fetching...#{year}/#{semester}/#{college};#{college_title_ko};#{college_title_en}"
-  address="/sugang/JACC110.do?srchGaesulYear=#{year}&srchGaesulHakgi=#{semester}&srchDaehakCode=#{college}&srchFlag=0&workType=EX&langKnd=KOR"
-  xls_filename="#{Dir.getwd()}/xls/#{year}_#{semester}_#{college}.xls"
-  txt_filename="#{Dir.getwd()}/txt/#{year}_#{semester}_#{college}.txt"
+  puts "Start fetching...#{year}/#{semester}"
+  address="/sugang/JACC110.do?srchGaesulYear=#{year}&srchGaesulHakgi=#{semester}&srchFlag=0&workType=EX&langKnd=KOR"
+  xls_filename="#{Dir.getwd()}/xls/#{year}_#{semester}.xls"
+  txt_filename="#{Dir.getwd()}/txt/#{year}_#{semester}.txt"
 
   req=Net::HTTP::Get.new('http://sugang.snu.ac.kr/sugang/JACO010.do')
   res=Net::HTTP.start('sugang.snu.ac.kr',80){|http|
@@ -155,11 +158,11 @@ colleges.each do |elem|
 
   result = `file #{xls_filename}`
   if result.match("ASCII") # empty xls if return true
-    puts "download skipped : #{year}_#{semester}_#{college}.xls"
+    puts "download skipped : #{year}_#{semester}.xls"
     system("rm #{xls_filename}")
     next
   else
-    puts "download complete : #{year}_#{semester}_#{college}.xls"
+    puts "download complete : #{year}_#{semester}.xls"
   end
 
   #convert
@@ -181,7 +184,7 @@ colleges.each do |elem|
   end
 
   open(txt_filename, "w") do |file|
-    file.puts "#{year}/#{semester}/#{college};#{college_title_ko};#{college_title_en}"
+    file.puts "#{year}/#{semester}"
     file.puts Time.now.localtime().strftime("%Y-%m-%d %H:%M:%S")
     file.puts "classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category"
     3.upto(m.row_size-1) do |i|

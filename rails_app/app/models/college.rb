@@ -16,4 +16,7 @@ class College
   has_many :departments, :dependent => :destroy
   has_many :images, :class_name => "Image", :as => "imageable", :dependent => :destroy
   has_many :videos, :class_name => "Video", :as => "videoable", :dependent => :destroy
+
+# processing
+  index({ number: 1, name: 1 }, { background: true })
 end

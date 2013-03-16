@@ -1,6 +1,0 @@
-2012/1/820;대학원;
-2013-01-19 20:56:25
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-일선;대학원;석박사;990.501A;001;연구 윤리;3;목(8-3);43-1-101;서이종;100;87;개설:관악캠퍼스;
-일선;대학원;석박사;990.501A;002;연구 윤리;3;화(10.5-3);#005-1;김옥주;165;161;1)개설:연건캠퍼스 2)대상:임상의학전공자;
-일선;대학원;석박사;990.501A;003;연구 윤리;3;화(10.5-3);#005-1;김미경;95;88;1)개설:연건캠퍼스 2)대상:기초의학전공자;

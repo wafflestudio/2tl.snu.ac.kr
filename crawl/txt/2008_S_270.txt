@@ -1,4 +1,0 @@
-2008/S/270;법과대학;
-2013-01-19 21:01:28
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;법과대학;2학년;273.209;;국제법 2;3;월(0-3)/수(0-3)/금(0-3);083-305/083-305/083-305;이상면;300;53;;

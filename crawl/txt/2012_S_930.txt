@@ -1,5 +1,0 @@
-2012/S/930;법학전문대학원;
-2013-01-19 20:57:14
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;법학전문대학원;석박사;931.908;;EU회사·증권법;2;월(1.5-3)/화(1.5-3)/수(1.5-3)/목(1.5-3)/금(1.5-3);015-201/015-201/015-201/015-201/015-201;Peter O. Muelbert;300;81;타대생수강불가,7.9~7.20;
-전선;법학전문대학원;석박사;931.909;;미국형사법;2;;;Brent Newton;300;159;타대생수강불가,7.23~8.2,토요일 수업있음;

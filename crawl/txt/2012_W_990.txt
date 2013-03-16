@@ -1,4 +1,0 @@
-2012/W/990;자유전공학부;
-2013-01-19 20:57:01
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;자유전공학부;2학년;991.203;001;주제탐구세미나 4;3;;;김범수;45;26;;

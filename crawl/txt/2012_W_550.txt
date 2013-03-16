@@ -1,7 +1,0 @@
-2012/W/550;수의과대학;
-2013-01-19 20:56:59
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;수의과대학;3학년;552.343;;수의임상면역학;1;;;우희종;1;1;;
-전선;수의과대학;3학년;552.346;;전통수의학;1;;;서강문;1;1;;
-전선;수의과대학;3학년;552.352;;동물병원 경영학;1;;;서강문;1;1;;
-전선;수의과대학;3학년;552.353;;수의 영양학;1;;;서강문;1;1;;

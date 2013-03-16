@@ -1,4 +1,0 @@
-2008/S/500;농업생명과학대학;
-2013-01-19 21:01:29
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;바이오시스템·소재학부;2학년;5261.228;;바이오열역학;3;월(4-3)/수(4-3)/금(4-3);200-2213/200-2213/200-2213;조성인;30;16;;

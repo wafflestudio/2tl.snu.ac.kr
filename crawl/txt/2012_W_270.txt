@@ -1,4 +1,0 @@
-2012/W/270;법과대학;
-2013-01-19 20:56:58
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;법과대학;석박사;2751.511;;지적재산경영론;3;월(10-3)/수(10-3)/금(10-3);017-108/017-108/017-108;심영택;50;7;영어강좌;

@@ -1,0 +1,51 @@
+<% type = ["", "학부", "석사", "박사"] %>
+<% grades['seongjeok_info']['course'].each_with_index do |course, i| %>
+#TODO
+  <% seongjeok = course['seongjeok'] %>
+  <% seongjeok.each do |s| %>
+    <% p = data_set[s['sungjuk'].to_s[0]].to_i + 1 %>
+    <% data_set[s['sungjuk'].to_s[0]] = p %>
+  <% end %>
+  <div id="chart<%= i %>"></div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var s1 = [2, 6, 7];
+    var s2 = [7, 5, 3];
+    var s3 = [14, 9, 3];
+    plot3 = $.jqplot('chart', [s1, s2, s3], {
+      title: '직전 학기 성적 분포(<%= type[course['cd'].to_i] %>)',
+      stackSeries: true,
+      captureRightClick: true,
+      seriesDefaults:{
+        renderer:$.jqplot.BarRenderer,
+        rendererOptions: {
+            barMargin: 30,
+            highlightMouseDown: true   
+        },
+        pointLabels: {show: true}
+      },
+      axes: {
+        xaxis: {
+            renderer: $.jqplot.CategoryAxisRenderer
+        },
+        yaxis: {
+          padMin: 0
+        }
+      },
+      legend: {
+        show: true,
+        location: 'e',
+        placement: 'outside'
+      }      
+    });
+    // Bind a listener to the "jqplotDataClick" event.  Here, simply change
+    // the text of the info3 element to show what series and ponit were
+    // clicked along with the data for that point.
+    $('#chart').bind('jqplotDataClick', 
+      function (ev, seriesIndex, pointIndex, data) {
+        $('#info').html('series: '+seriesIndex+', point: '+pointIndex+', data: '+data);
+      }
+    ); 
+  });
+  </script>
+<% end %>

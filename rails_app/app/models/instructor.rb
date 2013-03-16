@@ -12,4 +12,7 @@ class Instructor
 
 # validations
   validates :department, :presence => true
+  
+# processing
+  index({ name: 1 }, { background: true, sparse: true })
 end

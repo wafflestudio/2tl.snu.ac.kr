@@ -12,5 +12,18 @@ SNU2TL::Application.routes.draw do
   match "/graph/snu/timetable"    => "graph#timetable"
   match "/graph/snu/timetables"   => "graph#timetables"
 
+  match "/graph/snu/timetable/test"    => "graph#timetable_test"
+
   root :to => "main#home"
+  match "/help" => "main#help"
+  match "/about" => "main#about"
+  match "/developers" => "main#developers"
+  match "/terms" => "main#terms"
+  match "/privacy" => "main#privacy"
+  match "/contact" => "main#contact"
+  match "/blog" => "main#blog"
+  match "/facebook" => "main#facebook"
+  match "/twitter" => "main#twitter"
+  match "/troubleshooting" => "main#troubleshooting"
+  match "/feedback" => "main#feedback"
 end

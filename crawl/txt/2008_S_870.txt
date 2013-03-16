@@ -1,4 +1,0 @@
-2008/S/870;국제대학원;
-2013-01-19 21:01:30
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;국제학과;석사;8753.594;;지역연구연습;3;월(1-4)/화(1-4)/수(1-4)/목(1-4)/금(1-4);140-201/140-201/140-201/140-201/140-201;문우식;40;0;3주수업(7.28 -8.16), 선발된 경우에 한하여 수강가능, 홈페이지(gsis.snu.ac.kr) 참고;

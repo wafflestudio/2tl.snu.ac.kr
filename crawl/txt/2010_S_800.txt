@@ -1,4 +1,0 @@
-2010/S/800;의과대학;
-2013-01-19 20:54:14
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-교양;의학과;1학년;006.032;;인간생명과학개론;3;월(8-2)/화(8-2)/수(8-2)/목(8-2)/금(8-2);026-108/026-108/026-108/026-108/026-108;박재갑;250;117;;normal_nature

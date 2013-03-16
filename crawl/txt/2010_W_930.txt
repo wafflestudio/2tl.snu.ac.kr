@@ -1,4 +1,0 @@
-2010/W/930;법학전문대학원;
-2013-01-19 20:53:37
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;법학전문대학원;석박사;931.673;;민사재판론;3;월(2-4)/화(2-4)/수(2-4)/목(2-4)/금(2-4)/토(2-4);015-401/015-401/015-401/015-401/015-401/015-401;정선주;120;18;수업기간: 1/10 ~ 1/21(1/21은 8교시까지 수업);

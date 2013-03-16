@@ -1,4 +1,0 @@
-2010/W/920;행정대학원;
-2013-01-19 20:53:37
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;공기업정책학과;석사;925.505;;공기업 경영전략;3;월(4-3)/수(4-3)/금(4-3);057-105/057-105/057-105;김근중;66;66;공기업정책학과 학생들만 수강가능합니다.;

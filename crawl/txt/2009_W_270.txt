@@ -1,5 +1,0 @@
-2009/W/270;법과대학;
-2013-01-19 20:59:21
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-교양;법과대학;1학년;025.022;;시장경제와 법;3;월(1.5-3)/화(1.5-3)/목(1.5-3);017-108/017-108/017-108;이봉의;60;44;;core_society
-전필;법과대학;1학년;273.101;;민법총칙;3;월(7-3)/수(7-3)/금(7-3);084-    /084-    /084-;최봉경;50;19;금요일 수업 보강있음(첫시간에 논의), 강의실: 소강당;

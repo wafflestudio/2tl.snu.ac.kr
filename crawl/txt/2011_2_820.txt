@@ -1,5 +1,0 @@
-2011/2/820;대학원;
-2013-01-19 20:55:13
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-일선;대학원;석박사;990.501;001;연구윤리;2;목(8-2);220-201;서이종;61;60;관악캠퍼스, 목8-9교시;
-일선;대학원;석박사;990.501;002;연구윤리;2;화(10.5-2);#   -;김옥주;250;219;연건, 화요일10.5-11.5교시, 1학년강의실;

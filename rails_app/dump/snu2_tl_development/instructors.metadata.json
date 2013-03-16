@@ -1,1 +1,1 @@
-{ "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "snu2_tl_development.instructors", "name" : "_id_" } ] }
+{ "indexes" : [ { "v" : 1, "key" : { "_id" : 1 }, "ns" : "snu2_tl_development.instructors", "name" : "_id_" }, { "v" : 1, "key" : { "name" : 1 }, "ns" : "snu2_tl_development.instructors", "background" : true, "sparse" : true, "name" : "name_1" } ] }

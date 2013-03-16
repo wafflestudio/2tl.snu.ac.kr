@@ -1,4 +1,0 @@
-2012/S/350;생활과학대학;
-2013-01-19 20:57:12
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;의류학과;1학년;353.420;;CAD실습;2;;;이정호;35;12;화,목 5,6,7,8,9교시, 222동226호;

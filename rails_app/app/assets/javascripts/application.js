@@ -15,3 +15,6 @@
 //= require jquery.jqplot
 //= require jqplot.categoryAxisRenderer
 //= require jqplot.highlighter
+//= require jqplot.pieRenderer
+//= require dhtmlxscheduler
+//= require dhtmlxscheduler_dhx_terrace

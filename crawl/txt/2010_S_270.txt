@@ -1,4 +1,0 @@
-2010/S/270;법과대학;
-2013-01-19 20:54:13
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전필;법과대학;3학년;273.304;;회사법;3;월(5-3)/수(5-3)/금(5-3);015-601/015-601/015-601;송옥렬;160;92;;

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timetable-info>
+<!-- PCDATA -->
+<!--  hyear  : 개설년도 -->
+<!--  hakgi  :  개설학기 -->
+<!--  yoil : 요일 -->
+<!--  gyosi : 교시(30분단위 순서) -->
+<!--  g_time : 교시(1시간단위 순서) -->
+<!--  gyo_code : 교과목 코드 -->
+<!--  gangjwa_code : 강좌코드 -->
+<!--  gyo_name : 교과목명 -->
+<!--  judamdang_name : 주담당 교수명 -->
+<!--  gangdong_code : 강의실 동 -->
+<!--  gangsil_code : 강의실 호수-->
+<!--  length : 수업길이 1단위 = 0.5 시간-->
+
+<timetable id="MON_5">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>월</yoil>
+	<gyosi>5</gyosi>
+	<g_time>2</g_time>
+	<gyo_code>2114.417</gyo_code>
+	<gangjwa_code>   </gangjwa_code>
+	<gyo_name>인터랙티브미디어</gyo_name>
+	<gyo_ename>Interactive Media</gyo_ename>
+	<judamdang_name>이준</judamdang_name>
+	<gangdong_code>083</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>8</length>
+	</timetable>
+<timetable id="MON_13">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>월</yoil>
+	<gyosi>13</gyosi>
+	<g_time>6</g_time>
+	<gyo_code>023.027</gyo_code>
+	<gangjwa_code>   </gangjwa_code>
+	<gyo_name>문학과 철학의 대화</gyo_name>
+	<gyo_ename>Literature and Philosophy in Dialogue</gyo_ename>
+	<judamdang_name>장경렬</judamdang_name>
+	<gangdong_code>001</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>3</length>
+	</timetable>
+<timetable id="MON_16">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>월</yoil>
+	<gyosi>16</gyosi>
+	<g_time>7</g_time>
+	<gyo_code>4190.426A</gyo_code>
+	<gangjwa_code>   </gangjwa_code>
+	<gyo_name>인간컴퓨터상호작용</gyo_name>
+	<gyo_ename>Human-Computer Interaction</gyo_ename>
+	<judamdang_name>서진욱</judamdang_name>
+	<gangdong_code>302</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>3</length>
+	</timetable>
+<timetable id="TUE_16">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>화</yoil>
+	<gyosi>16</gyosi>
+	<g_time>7</g_time>
+	<gyo_code>4190.308</gyo_code>
+	<gangjwa_code>   </gangjwa_code>
+	<gyo_name>컴퓨터구조</gyo_name>
+	<gyo_ename>Computer Architecture</gyo_ename>
+	<judamdang_name>김지홍</judamdang_name>
+	<gangdong_code>302</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>3</length>
+	</timetable>
+<timetable id="WED_13">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>수</yoil>
+	<gyosi>13</gyosi>
+	<g_time>6</g_time>
+	<gyo_code>023.027</gyo_code>
+	<gangjwa_code>   </gangjwa_code>
+	<gyo_name>문학과 철학의 대화</gyo_name>
+	<gyo_ename>Literature and Philosophy in Dialogue</gyo_ename>
+	<judamdang_name>장경렬</judamdang_name>
+	<gangdong_code>001</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>3</length>
+	</timetable>
+<timetable id="WED_16">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>수</yoil>
+	<gyosi>16</gyosi>
+	<g_time>7</g_time>
+	<gyo_code>4190.426A</gyo_code>
+	<gangjwa_code>   </gangjwa_code>
+	<gyo_name>인간컴퓨터상호작용</gyo_name>
+	<gyo_ename>Human-Computer Interaction</gyo_ename>
+	<judamdang_name>서진욱</judamdang_name>
+	<gangdong_code>302</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>3</length>
+	</timetable>
+<timetable id="THU_16">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>목</yoil>
+	<gyosi>16</gyosi>
+	<g_time>7</g_time>
+	<gyo_code>4190.308</gyo_code>
+	<gangjwa_code>   </gangjwa_code>
+	<gyo_name>컴퓨터구조</gyo_name>
+	<gyo_ename>Computer Architecture</gyo_ename>
+	<judamdang_name>김지홍</judamdang_name>
+	<gangdong_code>302</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>3</length>
+	</timetable>
+<timetable id="FRI_5">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>금</yoil>
+	<gyosi>5</gyosi>
+	<g_time>2</g_time>
+	<gyo_code>025.004</gyo_code>
+	<gangjwa_code>   </gangjwa_code>
+	<gyo_name>삶과 교육</gyo_name>
+	<gyo_ename>Life and Education</gyo_ename>
+	<judamdang_name>김지현</judamdang_name>
+	<gangdong_code>005</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>6</length>
+	</timetable>
+<timetable id="FRI_11">
+	<year>2013</year>
+	<hakgi>1</hakgi>
+	<yoil>금</yoil>
+	<gyosi>11</gyosi>
+	<g_time>5</g_time>
+	<gyo_code>4190.413A</gyo_code>
+	<gangjwa_code>001</gangjwa_code>
+	<gyo_name>프로젝트 2</gyo_name>
+	<gyo_ename>Project 2</gyo_ename>
+	<judamdang_name>신영길</judamdang_name>
+	<gangdong_code>302</gangdong_code>
+	<gangsil_code></gangsil_code>
+	<length>12</length>
+	</timetable>
+</timetable-info>

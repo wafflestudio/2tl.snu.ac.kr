@@ -1,5 +1,0 @@
-2012/W/870;국제대학원;
-2013-01-19 20:57:00
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;국제개발정책학과;석박사;8752.820;;국제협력세미나 2;3;월(1.5-3)/수(1.5-3)/금(1.5-3);140-104/140-104/140-104;은기수;28;25;국제개발정책학과 학생 16명 및 국제대학원 학생만 수강가능;
-전선;국제학과;석박사;8754.821A;;한국학세미나;3;월(6-4)/수(6-4)/금(6-4);140-1-201/140-1-201/140-1-201;은기수;30;25;;

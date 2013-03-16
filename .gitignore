@@ -15,3 +15,8 @@
 /rails_app/tmp
 
 /rails_app/public/system
+
+# crwaling
+/crawl/txt
+/crawl/xls
+/crawl/raw

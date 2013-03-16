@@ -1,4 +1,0 @@
-2010/S/810;간호대학;
-2013-01-19 20:54:15
-classification;department;academic_year;course_number;lecture_number;course_title;credit;class_time;location;instructor;quota;enrollment;remark;category
-전선;간호대학;석박사;811.708;;간호이론개발;3;화(1-4)/목(1-4);#025-408/#025-408;임은옥;25;11;;

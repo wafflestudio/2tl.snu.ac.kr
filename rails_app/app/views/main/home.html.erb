@@ -1,7 +1,20 @@
 <% if signed_in? %>
   Email: <%= current_user.email %>
   <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+  <br />
+  <%= link_to "전체 평점보기(GRAPH)", "http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/grades/avg" %>
+  <%= link_to "전체 평점보기(XML)", "http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/grades/avg.xml" %>
+  <br />
+  <%= link_to "전체 성적보기(GRAPH)", "http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/grades" %>
+  <%= link_to "전체 성적보기(XML)", "http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/grades.xml" %>
+  <br />
+  <%= link_to "전체 시간표보기(TIMETABLE)", "http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/timetables" %>
+  <%= link_to "전체 시간표보기(XML)", "http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/timetables.xml" %>
+  <br />
+  <%= link_to "이번 학기 시간표보기(TIMETABLE)", "http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/timetable" %>
+  <%= link_to "이번 학기  시간표보기(XML)", "http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/timetable.xml" %>
+  <br />
 <% else %>
-  <%= link_to "Login", "http://sso.snu.ac.kr/snu/ssologin.jsp?si_redirect_address=http://auth.snu.ac.kr:4321/callback?callback=http://211.43.193.113:4000/graph/snu/user" %>
-  <%= link_to "Get Grades", "sso.snu.ac.kr/snu/ssologin.jsp?si_redirect_address=http://auth.snu.ac.kr:4321/callback?callback=http://211.43.193.113:4000/graph/snu/grades/avg" %>
+  <%= link_to "Login", "http://sso.snu.ac.kr/snu/ssologin.jsp?si_redirect_address=http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/user" %>
+  <%= link_to "Get Grades", "http://sso.snu.ac.kr/snu/ssologin.jsp?si_redirect_address=http://auth.snu.ac.kr:4321/siticket?callback=http://211.43.193.113:4000/graph/snu/grades/avg" %>
 <% end %>

@@ -10,6 +10,8 @@ class Semester
 # fields
   field :season, type: Integer, :default => SPRING
   field :year, type: Integer, :default => 2013
+  field :started_at, type: Date, :default => Time.now
+  field :ended_at, type: Date, :default => Time.now
 
 # relations
   has_many :lectures, :dependent => :destroy
